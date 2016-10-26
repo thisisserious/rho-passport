@@ -1,1 +1,1 @@
-angular.module('passportApp', []);
+angular.module('passportApp', ['ngRoute']);

@@ -1,7 +1,8 @@
 angular.module('passportApp')
 .controller('LoginController', LoginController);
 
-function LoginController($http) {
+function LoginController($http, $location) {
+  console.log('LoginController loaded');
   var ctrl = this;
 
   ctrl.login = function() {
