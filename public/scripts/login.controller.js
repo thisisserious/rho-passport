@@ -10,7 +10,7 @@ function LoginController($http, $location) {
     $http.post('/login', {
       username: ctrl.username,
       password: ctrl.password
-    }).then(function(response){
+    }).then(function(response) {
       console.log(response);
     }, function(error) {
       console.log('error loggin in', error);

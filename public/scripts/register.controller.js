@@ -8,9 +8,9 @@ function RegisterController($http, $location) {
   ctrl.register = function() {
     console.log('registering new user');
     $http.post('/register', {
-      username: ctrl.username,
+      username: ctrl.username, // these are available b/c of ng-model on register.html
       password: ctrl.password
-    }).then(function(){
+    }).then(function() {
       $location.path('/home');
     }, function(error) {
       console.log('error registering', error);

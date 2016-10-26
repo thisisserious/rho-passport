@@ -6,7 +6,7 @@ router.post('/', function(req, res) {
   const user = new User({username: req.body.username, password: req.body.password});
   user.save().then(function() {
     res.sendStatus(201);
-  }).catch(function(err){
+  }).catch(function(err) {
     console.log('Error in /register', err);
     res.sendStatus(500);
   });
